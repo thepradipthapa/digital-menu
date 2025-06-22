@@ -1,0 +1,16 @@
+{% extends 'core/base.html' %}
+
+{% block content %}
+
+<div class="container mt-5 align-items-center text-center">
+    <h2 class="mb-5">{{ vendor_name }}</h2>
+    <img src="{{ qr_url }}" alt="QR Code" class="rounded-3 border border-dark-subtle border-2">
+    <div class="mt-2">
+        <a href="{{ qr_url }}" download="{{ filename }}" class="btn btn-warning mt-3">Download QR Code</a>
+    </div>
+ 
+    <small class="text-muted d-block mt-2">Thank you for using Digital Menu.</small>
+
+</div>
+
+{% endblock %}
